@@ -1,0 +1,13 @@
+body
+{
+	background-color: #aed8e2;
+}
+
+h1
+{
+	float: center;
+	text-align: center;
+	color: blue;
+	border: solid blue 2px;
+	width: 300px;
+}	
