@@ -10,9 +10,21 @@ h1
 	color: blue;
 	border: solid blue 2px;
 	width: 300px;
-}	
+}
 
-nav 
+nav
 {
-	
+	width: 101%;
+	height: 50px;
+	background-color: green;
+	margin: 0 0 0 0px;
+}
+
+#nav-item
+{
+	text-align: center;
+	text-decoration: none;
+	width: 15%;
+	border-right: black 3px;
+	border-left: black 3px;
 }
