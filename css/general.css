@@ -14,17 +14,38 @@ h1
 
 nav
 {
-	width: 101%;
+	position: fixed;
+	display: block;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #5396ac;
+	width: 100%;
+	top: 0;
 	height: 50px;
-	background-color: green;
-	margin: 0 0 0 0px;
+	text-color: #ecd9c6;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #5396ac;;
 }
 
 #nav-item
 {
+	display: inline-block;
+	color: black;
 	text-align: center;
-	text-decoration: none;
-	width: 15%;
-	border-right: black 3px;
-	border-left: black 3px;
+  padding: 14px 50px;
+  text-decoration: none;
+	font-family: "Open Sans Condensed";
+	font-size: 18px;
+}
+
+#nav-item:hover
+{
+	background-color: #0086b3;
+	color: blue;
 }
