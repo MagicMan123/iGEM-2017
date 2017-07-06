@@ -1,11 +1,246 @@
+{{TP-CC_San_Diego}}
 <html>
-	<link>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/general.css">
-		<title>TP_CC_SanDiego iGEM 2017</title>
-		<h1>iGEM</h1>
-	<head>
-	<body>
-		h
-	</body>
+<title>TP_CC_SanDiego iGEM 2017</title>
+		
+		
+		<style>
+		
+		nav
+		{
+			top: 20px;
+			width: 101%;
+			position: fixed;
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			
+		}
+		
+		.dropbutton
+		{
+			background-color: blue;
+			color: white;
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			float: left;
+		}
+		
+		.dropbutton:hover, .dropbutton:focus 
+		{
+			background-color: black;
+		}
+		
+		.drop-content
+		{
+                        margin-top: 35px;
+			display: none;
+			position: absolute;
+			background-color: blue;
+			z-index: 1;
+		}
+		
+		.drop-content a
+		{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+                .drop-content a:hover
+		{
+			color: blue;
+                        background-color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		
+		.show
+		{
+			display: block;
+		}
+		
+		h1
+		{
+			padding-top: 60px;
+		}
+		</style>
+		
+		<script>
+		function show()
+		{
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbutton')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+		</script>
+		
+		<nav>
+			<button onmouseover="show()" class="dropbutton">Home</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Thing 1</a>
+				<a href="">Thing 2</a>
+				<a href="">Thing 3</a>
+			</div>
+			
+			<button onclick="show()" class="dropbutton">Modeling</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Thing 1</a>
+				<a href="">Thing 2</a>
+				<a href="">Thing 3</a>
+			</div>
+			
+			<button onclick="show()" class="dropbutton">Software Tools</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Thing 1</a>
+				<a href="">Thing 2</a>
+				<a href="">Thing 3</a>
+			</div>
+			
+			<button onclick="show()" class="dropbutton">Notebook</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Thing 1</a>
+				<a href="">Thing 2</a>
+				<a href="">Thing 3</a>
+			</div>
+			
+			<button onclick="show()" class="dropbutton">Human Practices</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Thing 1</a>
+				<a href="">Thing 2</a>
+				<a href="">Thing 3</a>
+			</div>
+			
+			<button onclick="show()" class="dropbutton">Team</button>
+			<div id="myDropdown" class="drop-content">
+				<a href="">Blank 1</a>
+				<a href="">Blank 2</a>
+			</div>
+		</nav>
+<div class="column full_size" >
+<h1> Project Description </h1>
+<p> 
+Cancer is a type of genetic disease which results in an uncontrollable growth of cells; while some cancers are benign, a large number of them are malignant and can lead to death. A large proportion of human cancer is caused by the acquisition of somatic mutations across an individual's lifetime, while germline mutations inherited from parental germ cells contribute to another a small, but significant part. Though contemporary treatment methods, including radiation therapy and cytotoxic chemotherapy, have achieved substantially, they often cause severe side effects. These include fatigue, infection, numbness,nausea, and pain, due to their lack of specificity. <br/> <br/>
+
+Over the past decade, comprehensive sequencing studies have revealed the genomic landscapes and identified important oncogenic drivers of human cancer. These efforts led to the development of cancer-specific targeted therapy, a way to improve therapeutic efficiency and overcome unsatisfying side effects. Imatinib, a chemotherapy medication which specifically targets BCR-ABL protein, is one of the successful examples for chronic myeloid leukemia treatment. In fact, patients who received imatinib have an overall survival rate of 85%. However, for certain types of cancer, targeted therapy has not shown promising results, with a response rate lower than 10%. Development of novel therapeutic strategy is still urgently needed. <br/> <br/>
+
+Oncogene amplification is one of the most common events in cancer genome and is a frequent driving force behind cancer cell behavior. Before scientists confirmed that human somatic cells carry 46 chromosomes, abnormal chromosome numbers in cancer cell was noticed, termed aneuploidy. With the increase in the expression of certain chromosome, genes that stimulate cell growth might be amplified, eventually leading to uncontrolled cell cycle and malignant transformation.<br/> <br/>
+
+In 1965, extrachromosomal DNA (ecDNA) was discovered; DNA free from its traditional homes in the nucleus was documented. One study taking a look at ecDNA by means of fluorescence in situ hybridization proposed the ecDNA’s unusual number of oncogenes, but it didn’t catch enough attention because it was considered to be a rare event. Not until recently has the importance of ecDNA been revisited. The most recent study revealed that nearly 40% of oncogenes reside on ecDNA rather than the widely accepted notion that all DNA resided only on chromosomes. <br/><br/>
+
+Similar to chromosomal DNA, ecDNA is composed by double strands of nucleic acid but form a circular structure. More importantly, ecDNA does not have a centromere for spindle fiber binding during mitosis. This unique feature allows rapid DNA multiplication  and random segregation to create high heterogeneity in daughter cells during cell proliferation, implying a possible correlative relationship between the development of tumors and a faster resistance to existing treatments. <br/> <br/>
+
+<b> How does ecDNA affect cell proliferation? <br/> <br/>
+
+Is it possible to specifically target ecDNA? <br/> <br/> 
+
+Will elimination of ecDNA cause selective cancer cell death? <br/> <br/> </b> 
+
+Clustered regularly interspaced short palindromic repeats (CRISPR) technology is an effective and convenient approach for accurate gene editing mediated by Cas9 DNA nuclease and small guide RNA (gRNA). In this project, we aim to study whether specific removal of ecDNA will induce growth inhibition or death in cancer cells. To test this hypothesis, CRISPR will be used to selectively introduce DNA double strand breaks on pieces of ecDNA. First, we will identify a cancer cell line that carries ecDNA and quantify the oncogene copy number. Then, we will design and clone several gRNAs to target specific sites of the ecDNA. These gRNAs with Cas9 construct will be transfected into cancer cell line and test the cell viability. Eventually we will answer the questions posed.
+</p>
+</div>
+
+
+
+<div class="column full_size" >	
+<h1> Welcome to iGEM 2017! </h1>
+<p>Your team has been approved and you are ready to start the iGEM season! </p>
+
+</div> 
+
+<div class="clear"></div>
+
+<div class="column half_size" >	
+<h5>Before you start: </h5>
+<p> Please read the following pages:</p>
+<ul>
+<li>  <a href="http://2017.igem.org/Competition">Competition Hub</a> </li>
+<li> <a href="http://2017.igem.org/Competition/Deliverables/Wiki">Wiki Requirements page</a></li>
+<li> <a href="http://2017.igem.org/Resources/Template_Documentation">Template documentation</a></li>
+</ul>
+</div>
+
+<div class="column half_size" >	
+<div class="highlight">
+<h5> Styling your wiki </h5>
+<p>You may style this page as you like or you can simply leave the style as it is. You can easily keep the styling and edit the content of these default wiki pages with your project information and completely fulfill the requirement to document your project.</p>
+<p>While you may not win Best Wiki with this styling, your team is still eligible for all other awards. This default wiki meets the requirements, it improves navigability and ease of use for visitors, and you should not feel it is necessary to style beyond what has been provided.</p> 
+</div>
+</div>
+
+<div class="column full_size" >	
+<h5> Wiki template information </h5>
+<p>We have created these wiki template pages to help you get started and to help you think about how your team will be evaluated. You can find a list of all the pages tied to awards here at the <a href="http://2017.igem.org/Judging/Pages_for_Awards">Pages for awards</a> link. You must edit these pages to be evaluated for medals and awards, but ultimately the design, layout, style and all other elements of your team wiki is up to you!</p>
+
+</div> 
+
+
+
+
+<div class="column half_size" >	
+<h5> Editing your wiki </h5>
+<p>On this page you can document your project, introduce your team members, document your progress and share your iGEM experience with the rest of the world! </p> 
+<p> <a href="http://2017.igem.org/wiki/index.php?title=Team:Example&action=edit"> </a>Use WikiTools - Edit in the black menu bar to edit this page</p>
+
+</div>
+
+
+<div class="column half_size" >	
+<h5>Tips</h5>
+<p>This wiki will be your team’s first interaction with the rest of the world, so here are a few tips to help you get started: </p>
+<ul>
+<li>State your accomplishments! Tell people what you have achieved from the start. </li>
+<li>Be clear about what you are doing and how you plan to do this.</li>
+<li>You have a global audience! Consider the different backgrounds that your users come from.</li>
+<li>Make sure information is easy to find; nothing should be more than 3 clicks away.  </li>
+<li>Avoid using very small fonts and low contrast colors; information should be easy to read.  </li>
+<li>Start documenting your project as early as possible; don’t leave anything to the last minute before the Wiki Freeze. For a complete list of deadlines visit the <a href="http://2017.igem.org/Calendar">iGEM 2017 calendar</a> </li>
+<li>Have lots of fun! </li>
+</ul> 
+</div>
+
+
+<div class="column half_size" >	
+<h5>Inspiration</h5>
+<p> You can also view other team wikis for inspiration! Here are some examples:</p>
+<ul>
+<li> <a href="http://2014.igem.org/Team:SDU-Denmark/"> 2014 SDU Denmark </a> </li>
+<li> <a href="http://2014.igem.org/Team:Aalto-Helsinki">2014 Aalto-Helsinki</a> </li>
+<li> <a href="http://2014.igem.org/Team:LMU-Munich">2014 LMU-Munich</a> </li>
+<li> <a href="http://2014.igem.org/Team:Michigan"> 2014 Michigan</a></li>
+<li> <a href="http://2014.igem.org/Team:ITESM-Guadalajara">2014 ITESM-Guadalajara </a></li>
+<li> <a href="http://2014.igem.org/Team:SCU-China"> 2014 SCU-China </a></li>
+</ul>
+</div>
+
+<div class="column half_size" >	
+<h5> Uploading pictures and files </h5>
+<p> You can upload your pictures and files to the iGEM 2017 server. Remember to keep all your pictures and files within your team's namespace or at least include your team's name in the file name. <br />
+When you upload, set the "Destination Filename" to <br><code>T--YourOfficialTeamName--NameOfFile.jpg</code>. (If you don't do this, someone else might upload a different file with the same "Destination Filename", and your file would be erased!)<br><br>
+
+<a href="http://2017.igem.org/Special:Upload">
+UPLOAD FILES
+</a>
+</p>
+</div>
+
+
+
+
+
+
+
 </html>
