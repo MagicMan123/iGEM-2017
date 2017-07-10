@@ -1,5 +1,4 @@
-{{TP-CC_San_Diego}}
-<html>
+<html onmouseover="show()">
 <title>TP_CC_SanDiego iGEM 2017</title>
 		
 		
@@ -33,11 +32,16 @@
 		
 		.drop-content
 		{
-                        margin-top: 35px;
+                        margin-top: 39px;
 			display: none;
 			position: absolute;
 			background-color: blue;
 			z-index: 1;
+		}
+
+.drop-contentlate
+		{
+                        margin-right: 50px;
 		}
 		
 		.drop-content a
@@ -59,6 +63,26 @@
 		
 		.show
 		{
+			display: inline;
+		}
+.show2
+		{
+			display: inline;
+		}
+.show3
+		{
+			display: inline;
+		}
+.show4
+		{
+			display: inline;
+		}
+.show5
+		{
+			display: inline;
+		}
+.show6
+		{
 			display: block;
 		}
 		
@@ -72,6 +96,26 @@
 		function show()
 		{
 			document.getElementById("myDropdown").classList.toggle("show");
+		}
+function show2()
+		{
+			document.getElementById("myDropdown2").classList.toggle("show2");
+		}
+function show3()
+		{
+			document.getElementById("myDropdown3").classList.toggle("show3");
+		}
+function show4()
+		{
+			document.getElementById("myDropdown4").classList.toggle("show4");
+		}
+function show5()
+		{
+			document.getElementById("myDropdown5").classList.toggle("show5");
+		}
+function show6()
+		{
+			document.getElementById("myDropdown6").classList.toggle("show6");
 		}
 		
 		window.onclick = function(event) {
@@ -89,49 +133,49 @@
 		</script>
 		
 		<nav>
-			<button onmouseover="show()" class="dropbutton">Home</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Thing 1</a>
-				<a href="">Thing 2</a>
-				<a href="">Thing 3</a>
+			<button onmouseover="show6()" onmouseout="show6()" class="dropbutton">Project</button>
+			<div id="myDropdown" onmouseover="show()" onmouseout="show()" class="drop-content">
+				<a href="">Overview</a>
+				<a href="">Single Cell Model</a>
+				<a href="">Population Model</a>
 			</div>
 			
-			<button onclick="show()" class="dropbutton">Modeling</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Thing 1</a>
-				<a href="">Thing 2</a>
-				<a href="">Thing 3</a>
+			<button onmouseover="show()" onmouseout="show()" class="dropbutton">Modeling</button>
+			<div id="myDropdown2" onmouseover="show2()" onmouseout="show2()" class="drop-content">
 			</div>
 			
-			<button onclick="show()" class="dropbutton">Software Tools</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Thing 1</a>
-				<a href="">Thing 2</a>
-				<a href="">Thing 3</a>
+			<button onmouseover="show2()" onmouseout="show2()" class="dropbutton">Software Tools</button>
+			<div id="myDropdown3" onmouseover="show3()" onmouseout="show3()" class="drop-content">
+				<a href="">Lab Book</a>
+				<a href="">Protocols</a>
+				<a href="">Medal Criteria</a>
+                                <a href="">Brainstorm</a>
 			</div>
 			
-			<button onclick="show()" class="dropbutton">Notebook</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Thing 1</a>
-				<a href="">Thing 2</a>
-				<a href="">Thing 3</a>
+			<button onmouseover="show3()" onmouseout="show3()" class="dropbutton">Notebook</button>
+			<div id="myDropdown4" onmouseover="show4()" onmouseout="show4()" class="drop-content">
+				<a href="">Human Practices</a>
+				<a href="">Integrated Practices</a>
+				<a href="">Public Engagement</a>
+                                <a href="">Collaborations</a>
 			</div>
 			
-			<button onclick="show()" class="dropbutton">Human Practices</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Thing 1</a>
-				<a href="">Thing 2</a>
-				<a href="">Thing 3</a>
+			<button onmouseover="show4()" onmouseout="show4()" class="dropbutton">Human Practices</button>
+			<div id="myDropdown5" onmouseover="show5()" onmouseout="show5()" class="drop-content">
+				<a href=""></a>
+				<a href=""></a>
 			</div>
 			
-			<button onclick="show()" class="dropbutton">Team</button>
-			<div id="myDropdown" class="drop-content">
-				<a href="">Blank 1</a>
-				<a href="">Blank 2</a>
+			<button onmouseover="show5()" onmouseout="show5()" class="dropbutton">Team</button>
+			<div id="myDropdown6" onmouseover="show6()" onmouseout="show6()" class="drop-content">
+				<a href="">Description</a>
+				<a href="">Results/a>
+                                <a href="">Proof/a>
+                                <a href="">Basic Parts/a>
 			</div>
 		</nav>
 <div class="column full_size" >
-<h1> Project Description </h1>
+<h1 style="margin-top: 30px;"> Project Description </h1>
 <p> 
 Cancer is a type of genetic disease which results in an uncontrollable growth of cells; while some cancers are benign, a large number of them are malignant and can lead to death. A large proportion of human cancer is caused by the acquisition of somatic mutations across an individual's lifetime, while germline mutations inherited from parental germ cells contribute to another a small, but significant part. Though contemporary treatment methods, including radiation therapy and cytotoxic chemotherapy, have achieved substantially, they often cause severe side effects. These include fatigue, infection, numbness,nausea, and pain, due to their lack of specificity. <br/> <br/>
 
